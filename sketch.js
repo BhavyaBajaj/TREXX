@@ -42,7 +42,7 @@ function setup() {
   
   sun = createSprite(width-50,100,10,10);
   sun.addAnimation("sun", sunAnimation);
-  sun.scale = 1
+  sun.scale = 0.3;
   
   trex = createSprite(50,height-70,20,50);
   
@@ -50,7 +50,7 @@ function setup() {
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   trex.setCollider('circle',0,0,350)
-  trex.scale = 1;
+  trex.scale = 0.5;
   // trex.debug=true
   
   invisibleGround = createSprite(width/2,height-10,width,125);  
@@ -183,7 +183,7 @@ function spawnObstacles() {
     }
     
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 1;
+    obstacle.scale = 1.5;
     obstacle.lifetime = 300;
     obstacle.depth = trex.depth;
     trex.depth +=1;
