@@ -50,7 +50,7 @@ function setup() {
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   trex.setCollider('circle',0,0,350)
-  trex.scale = 0.35;
+  trex.scale = 0.29;
   // trex.debug=true
   
   invisibleGround = createSprite(width/2,height-10,width,125);  
@@ -68,7 +68,7 @@ function setup() {
   restart.addImage(restartImg);
   
   gameOver.scale = 0.3;
-  restart.scale = 0.2;
+  restart.scale = 0.1;
 
   gameOver.visible = false;
   restart.visible = false;
@@ -96,7 +96,7 @@ function draw() {
     
     if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-120) {
       jumpSound.play( )
-      trex.velocityY = -100;
+      trex.velocityY = -500;
        touches = [];
     }
     
