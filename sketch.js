@@ -42,7 +42,7 @@ function setup() {
   
   sun = createSprite(width-50,100,10,10);
   sun.addAnimation("sun", sunAnimation);
-  sun.scale = 0.2;
+  sun.scale = 1
   
   trex = createSprite(50,height-70,20,50);
   
@@ -67,7 +67,7 @@ function setup() {
   restart = createSprite(width/2,height/2);
   restart.addImage(restartImg);
   
-  gameOver.scale = 0.35;
+  gameOver.scale = 0.3;
   restart.scale = 0.2;
 
   gameOver.visible = false;
@@ -96,7 +96,7 @@ function draw() {
     
     if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-120) {
       jumpSound.play( )
-      trex.velocityY = -30;
+      trex.velocityY = -60;
        touches = [];
     }
     
