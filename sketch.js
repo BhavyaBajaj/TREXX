@@ -42,7 +42,7 @@ function setup() {
   
   sun = createSprite(width-50,100,10,10);
   sun.addAnimation("sun", sunAnimation);
-  sun.scale = 0.11
+  sun.scale = 0.2
   
   trex = createSprite(50,height-70,20,50);
   
@@ -50,7 +50,7 @@ function setup() {
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   trex.setCollider('circle',0,0,350)
-  trex.scale = 0.13
+  trex.scale = 0.20
   // trex.debug=true
   
   invisibleGround = createSprite(width/2,height-10,width,125);  
@@ -67,8 +67,8 @@ function setup() {
   restart = createSprite(width/2,height/2);
   restart.addImage(restartImg);
   
-  gameOver.scale = 0.5;
-  restart.scale = 0.1;
+  gameOver.scale = 0.52;
+  restart.scale = 0.3;
 
   gameOver.visible = false;
   restart.visible = false;
@@ -96,7 +96,7 @@ function draw() {
     
     if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-120) {
       jumpSound.play( )
-      trex.velocityY = -10;
+      trex.velocityY = -30;
        touches = [];
     }
     
