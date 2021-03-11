@@ -94,16 +94,19 @@ function draw() {
     score = score + Math.round(getFrameRate()/100);
     ground.velocityX = -(6 + 3*score/100);
     
-    if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-100) {
-      jumpSound.play( )
-      trex.velocityY = -500;
-       touches = [];
-    }
+   
     
     trex.velocityY = trex.velocityY + 1
   
     if (ground.x < 0){
       ground.x = ground.width/2;
+    }
+    
+    
+     if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-100) {
+      jumpSound.play( )
+      trex.velocityY = -100;
+       touches = [];
     }
   
     trex.collide(invisibleGround);
