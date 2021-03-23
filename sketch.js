@@ -187,7 +187,7 @@ function spawnObstacles() {
     }
     
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 1.5;
+    obstacle.scale = 0.5;
     obstacle.lifetime = 300;
     obstacle.depth = trex.depth;
     trex.depth +=1;
