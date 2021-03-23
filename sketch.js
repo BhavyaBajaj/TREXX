@@ -172,7 +172,7 @@ function spawnObstacles() {
   if(frameCount % 100 === 0) {
     var obstacle = createSprite(500,height-95,20,30);
     obstacle.setCollider('circle',0,0,45)
-    // obstacle.debug = true
+    obstacle.debug = true
   
     obstacle.velocityX = -(5 + 3*score/100);
     
@@ -187,7 +187,7 @@ function spawnObstacles() {
     }
     
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 0.25;
+    obstacle.scale = 0.4;
     obstacle.lifetime = 400;
     obstacle.depth = trex.depth;
     
