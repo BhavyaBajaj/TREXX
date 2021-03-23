@@ -169,12 +169,12 @@ function spawnClouds() {
 }
 
 function spawnObstacles() {
-  if(frameCount % 60 === 0) {
+  if(frameCount % 100 === 0) {
     var obstacle = createSprite(500,height-95,20,30);
     obstacle.setCollider('circle',0,0,45)
     // obstacle.debug = true
   
-    obstacle.velocityX = -(6 + 3*score/100);
+    obstacle.velocityX = -(5 + 3*score/100);
     
     //generate random obstacles
     var rand = Math.round(random(1,2));
@@ -188,9 +188,9 @@ function spawnObstacles() {
     
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.5;
-    obstacle.lifetime = 300;
+    obstacle.lifetime = 400;
     obstacle.depth = trex.depth;
-    trex.depth +=1;
+    
     //add each obstacle to the group
     obstaclesGroup.add(obstacle);
   }
