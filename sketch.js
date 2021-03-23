@@ -152,7 +152,7 @@ function spawnClouds() {
     var cloud = createSprite(width+20,height-300,40,10);
     cloud.y = Math.round(random(100,220));
     cloud.addImage(cloudImage);
-    cloud.scale = 1;
+    cloud.scale = 0.5;
     cloud.velocityX = -4;
     
      //assign lifetime to the variable
