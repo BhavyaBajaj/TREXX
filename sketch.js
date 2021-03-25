@@ -105,7 +105,7 @@ function draw() {
     
      if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= 0) {
       jumpSound.play( )
-      trex.velocityY = -20;
+      trex.velocityY = -40;
        console.log("pressed")
        touches = [];
     }
